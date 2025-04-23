@@ -1,0 +1,224 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #122932;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #122932;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background: #122932;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+#pagination {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #122932;
+    color: white;
+    cursor: pointer;
+}
+
+#pagination button.active {
+    background-color: #2c514c;
+    color: white;
+    border: #122932;
+}
+
+#pagination button:hover {
+    background-color: #2c514c;
+    transform: translateY(-1px);
+}
+
+/* Dropdown styling */
+#tableSelect {
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #122932;
+    border-radius: 4px;
+
+}
+
+
+
+
+input.form-control,
+select.form-control {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #35424a;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    width: 20%; /* Full width for input and select only */
+}
+
+
+.submit-btn {
+    background-color: #122932; /* Dark color for submit */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #2c3e50; /* Darker color on hover */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Red for delete */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.update-btn {
+    background-color: #3498db; /* Blue for update */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: auto; /* Center the form horizontally */
+    box-sizing: border-box;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #35424a;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #122932;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #2c3e50;
+}
